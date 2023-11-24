@@ -35,6 +35,7 @@ async function login() {
        // toastify("Email ou senha incorretos", "error")
     }
     console.log(res)
+    console.log("judas")
     btnLogin.innerHTML = ""
     btnLogin.innerText = "Logar"
 
