@@ -30,20 +30,16 @@ async function login() {
     if (res.status == 200) {
         const resJson = await res.json()
         //toastify("Ok, login efetuado com sucesso!", "ok")
-        console.log(resJson)
+        console.log(resJson)   
+        if(resJson.accessToken){
+            window.location.replace("./cadastro")
+         }
     } else {
        // toastify("Email ou senha incorretos", "error")
     }
     console.log(res)
-    console.log("judas")
-    btnLogin.innerHTML = ""
-    btnLogin.innerText = "Logar"
-
-    if(resJson.accessToken){
-
-     }
-     window.location.replace("./cadastro")
-
+    
+    
 
 }
 const nome = document.querySelector("form")
@@ -51,4 +47,8 @@ nome.addEventListener("submit",(event)=>{
     event.preventDefault()
     login()
 })
+     
+
+
+
     

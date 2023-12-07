@@ -1,0 +1,39 @@
+SITUAÇÃO 
+- MARIA TEM UMA LOJA DE DOCES
+- GOSTARIA DE TER UM SISTEMA PARA CONTROLE DE VENDAS/CAIXA
+
+-REQUISITOS:
+	RESUMO FINANCEIRO,	
+		-POR DIA
+		-POR MÊS
+			-LUCRO
+			-DESPESAS
+			-VENDAS TOTAIS
+	CUSTOS FIXOS
+		ALUGUEL - 1500
+		LUZ - 800
+		AGUA - 150
+		INTERNET - 100
+	PRODUTOS
+		ATUALMENTE;
+			 - CUSTO R$3 - VENDA R$ 8
+		DEVE SER POSSÍVEL CADASTRAR NOVOS PRODUTOS
+			CUSTO
+			VENDA
+			NOME
+	VENDA
+		DEVE SER POSSÍVEL LANÇAR UMA VENDA
+
+	OBRIGATORIO LOGIN E AUTENTICAÇÃO
+
+faca um codigo em javascript faça um index.html, style.css de uma lista de produtos contendo os campos nome,preço custo e preço de venda,
+coloque ja o seguinte produto: CUPCAKE - CUSTO R$ 3 - VENDA R$ 8, que tenha tambem um campo onde posssa ser cadastrado produtos contendo os campos
+nome, preço custo e preço venda
+
+faca um codigo em javascript faça um index.html, style.css de um resumo financeiro, que tenha todos esses itens RESUMO FINANCEIRO,	
+-POR DIA,-POR MÊS, -LUCRO, -DESPESAS e crie outro titulo: CUSTOS FIXOS dentro desse titulo adicione as seguintes informações ALUGUEL - 1500, LUZ - 800,
+AGUA - 150, INTERNET - 100
+		
+			
+			
+	
