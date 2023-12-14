@@ -1,0 +1,1 @@
+https://controlevendas.vercel.app/
