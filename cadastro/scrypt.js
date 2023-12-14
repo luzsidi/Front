@@ -8,41 +8,38 @@ nome.addEventListener("submit",(event)=>{
 })
 
 async function cadastrar() {
-    const inputProdutos = document.querySelector("#produtos")
-    const inputValor = document.querySelector("#valor")
-    const user = {
-        produtos:inputProdutos.value,
-        valor:inputValor.value
+    const inputProdutos = document.querySelector("#produtos").value
+    const inputValorInicial = document.querySelector("#valorInicial").value
+    const inputValorFinal = document.querySelector("#valorFinal").value
+
+    const info= {
+        produtos:inputProdutos,
+        valorInicial:inputValorInicial,
+        valorFinal:inputValorFinal
     }
-    console.log(user)
-    const bodyJson = JSON.stringify(user)
-    const res = await fetch("http://localhost:3001/produtos", {
+    console.log(info)
+    const bodyJson = JSON.stringify(info)
+    const res = await fetch("https://loja-doces.onrender.com/produtos", {
 
     headers: myHeaders,
     method: "POST",
-    body: bodyJson
+    body:bodyJson
 })
-const produto=await res.json()
-console.log(produto)
+console.log(res)
+console.log("jjhsu")
+
 
 if (res.status == 201) {
     const resJson = await res.json()
     
     console.log(resJson)   
     if(resJson){
-        window.location.replace("./home")
+        window.location.replace("/home")
      }
-} else {
-   
-}
-console.log(res)
-console.log("jjhsu")
+} 
 
-const nome = document.querySelector("form")
-nome.addEventListener("submit",(event)=>{
-event.preventDefault()
-cadastro()
-})
+
+
 }
 
  
